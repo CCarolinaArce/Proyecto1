@@ -20,6 +20,12 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
   },
+  {
+    rules: {
+      "no-unused-vars": "error",
+      "@next/next/no-img-element": "error"
+    }
+  }
 ];
 
 export default eslintConfig;
