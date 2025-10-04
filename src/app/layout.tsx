@@ -6,6 +6,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ClientLayout from "./ClientLayout";
 
+
+import { Roboto_Mono } from 'next/font/google'; 
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -33,9 +36,16 @@ const roboto = Roboto({
   display: 'swap',
 });
 
+const robotoMono = Roboto_Mono({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-roboto-mono', // Define una variable CSS inyectada en el DOM
+});
+
+
 export const metadata: Metadata = {
-  title: "Hussaini Legal Group | International Law Firm | Miami, Amsterdam & Damascus",
-  description: "Leading international law firm providing expert legal services across Miami, Amsterdam, and Damascus. Specializing in corporate law, arbitration, investment contracting, Islamic finance, and cross-border transactions. Trusted legal counsel for global businesses and institutions.",
+  title: "RocFeler Portfolio | Local-Server",
+  description: "RocFeler Portfolio showcasing projects and skills.",
 };
 
 export default function RootLayout({
@@ -44,10 +54,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${merriweather.variable} ${exo.variable} ${roboto.variable}`}>
+    <html lang="en" className={`${robotoMono.variable}`}>
+      <body className={`${inter.variable} ${merriweather.variable} ${exo.variable}  ${roboto.variable} 
+      bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300`}>
         <ClientLayout>
           <Header />
+         
           <Box
             component="main"
           >
