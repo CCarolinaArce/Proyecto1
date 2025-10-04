@@ -1,7 +1,7 @@
 import { Container, Grid, Card, CardContent, CardMedia, Typography, CardActions, Button } from '@mui/material';
 
 function Blog() {
-  const blogPosts =;
+  const blogPosts = []
 
   return (
     <Container maxWidth="lg">
