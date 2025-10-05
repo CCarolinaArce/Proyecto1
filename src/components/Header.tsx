@@ -2,12 +2,12 @@
 import { AppBar, Toolbar, Box, Typography, Button, Link } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import MobileMenu from './MobileMenu';
-import Image from 'next/image'; // Asegúrate de importar Image si lo usas
+
 
 function Navbar() {
   const pages = ['Deploys', 'Repositories', 'Design', 'Blog', 'About', 'Resources']; // Lista de tus páginas
 
-  const logoPath = "/images/rocfeler-logo.png"; // Define la ruta del logo aquí
+  const logoPath = '/rocfeler-logo.png'; // Ruta al logo
 
   return (
     <AppBar
@@ -37,23 +37,19 @@ function Navbar() {
         >
           <Box
             component="img"
-            src={logoPath} // Usa la variable de ruta del logo
-            alt="Rocfeler Logo"
-            sx={{
-              height: '40px',
-              width: 'auto',
-            }}
+            src={logoPath}
+            alt="Logo"
+            width={180}
+            height={40}
           />
-          {/* Opcional: <Image src={logoPath} alt="Rocfeler Logo" width={120} height={40} priority /> */}
         </Link>
 
         {/* Menú de Hamburguesa (para móviles) */}
-        <MobileMenu 
-            pages={pages} 
-            logoSrc={logoPath}
-            handleLogoClick={() => window.location.href = '/' }
-
-        /> 
+        <MobileMenu
+          pages={pages}
+          logoSrc={logoPath}
+          handleLogoClick={() => window.location.href = '/'}
+        />
 
         {/* Links de Navegación para Desktop */}
         <Box
