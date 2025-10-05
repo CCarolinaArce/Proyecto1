@@ -1,4 +1,3 @@
-import { StaticImageData } from 'next/image';
 
 import imgA from '@/assets/images/img3.png';
 import imgB from '@/assets/images/img4.png';

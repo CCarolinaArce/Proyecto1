@@ -1,4 +1,4 @@
-import { Box, Button, Card, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Cards from '@/components/Cards';
 
@@ -73,7 +73,7 @@ function Home() {
             },
           }}
         >
-          Download CV →
+          Download CV 
         </Button>
       </Box>
 

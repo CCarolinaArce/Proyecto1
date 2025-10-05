@@ -6,13 +6,13 @@ function Cards({ title, link }: { title: string; link: string }) {
     <Box
       sx={{
         width: { xs: '100%', sm: '300px' },
-        height: '200px', // Altura fija para las tarjetas
-        bgcolor: '#222', // Fondo oscuro de la tarjeta
-        borderRadius: 2, // Bordes redondeados
-        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)', // Sombra sutil
+        height: '200px', 
+        bgcolor: '#222',
+        borderRadius: 2,
+        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between', // Para espaciar el contenido y el enlace
+        justifyContent: 'space-between', 
         alignItems: 'center',
         padding: 2,
         textAlign: 'center',

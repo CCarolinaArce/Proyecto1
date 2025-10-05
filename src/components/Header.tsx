@@ -1,5 +1,5 @@
 'use client';
-import { AppBar, Toolbar, Box, Typography, Button, Link } from '@mui/material';
+import { AppBar, Toolbar, Box, Button, Link } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import MobileMenu from './MobileMenu';
 import { headerMock } from '@/mocks/header.mock';

@@ -77,7 +77,8 @@ export default function BlogPage() {
             WebkitTextFillColor: 'transparent',
             letterSpacing: '1px', marginBottom: theme.spacing(4) }}
         >
-          Let's talk about what really matters
+              <p title={'Let\'s talk about what really matters'}>Lets talk about what really matters</p>
+
         </Typography>
 
         <MainContentWrapper>
