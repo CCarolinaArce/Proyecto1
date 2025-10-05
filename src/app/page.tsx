@@ -88,9 +88,9 @@ function Home() {
           pb: 4, // Padding inferior
         }}
       >
-        <Cards title="img" link="https://ainventory-beryl.vercel.app" />
-        <Cards title="img" link="https://lerenblackboard-demo.vercel.app" />
-        <Cards title="img" link="https://lookai-tawny.vercel.app" />
+        <Cards title="Aiventory" link="https://ainventory-beryl.vercel.app" />
+        <Cards title="Leren Blackboard" link="https://lerenblackboard-demo.vercel.app" />
+        <Cards title="Lookai" link="https://lookai-tawny.vercel.app" />
       </Box>
     </Box>
   );

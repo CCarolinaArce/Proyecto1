@@ -1,13 +1,11 @@
 import React from 'react'
 import { Box, Typography, Link } from '@mui/material'
 
-// Props para la tarjeta
-
 function Cards({ title, link }: { title: string; link: string }) {
   return (
     <Box
       sx={{
-        width: { xs: '100%', sm: '300px' }, // Ancho responsivo
+        width: { xs: '100%', sm: '300px' },
         height: '200px', // Altura fija para las tarjetas
         bgcolor: '#222', // Fondo oscuro de la tarjeta
         borderRadius: 2, // Bordes redondeados
@@ -30,10 +28,10 @@ function Cards({ title, link }: { title: string; link: string }) {
       <Typography variant="body1" sx={{ flexGrow: 1 }}>{title}</Typography>
       <Link
         href={link}
-        target="_blank" // Abre en una nueva pestaña
+        target="_blank" 
         rel="noopener noreferrer"
         sx={{
-          color: '#007bff', // Color del enlace
+          color: '#007bff',
           textDecoration: 'none',
           fontSize: '0.85rem',
           '&:hover': { textDecoration: 'underline' },
@@ -47,4 +45,3 @@ function Cards({ title, link }: { title: string; link: string }) {
 
 export default Cards;
 
-// Uso en la página principal (page.tsx)
