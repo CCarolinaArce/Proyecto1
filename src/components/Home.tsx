@@ -1,19 +1,20 @@
+import React from 'react';
 import { Container, Grid, Card, CardContent, CardMedia, Typography, CardActions, Button } from '@mui/material';
 
-function Blog() {
-  const blogPosts = []
+function Home() {
+  
 
   return (
     <Container maxWidth="lg">
       <Grid container spacing={4}>
-        {blogPosts.map((post) => (
+        {homeMock.map((post) => (
           <Grid item xs={12} sm={6} md={4} key={post.id}>
             <Card>
               <CardMedia
                 component="img"
                 height="140"
-                image={post.image}
-                alt={post.title}
+                image={homeMock.image}
+                alt={homeMock.description}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -35,4 +36,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Home;
