@@ -5,8 +5,6 @@ import { Box } from '@mui/material';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ClientLayout from "./ClientLayout";
-
-
 import { Roboto_Mono } from 'next/font/google'; 
 
 const inter = Inter({
@@ -39,7 +37,7 @@ const roboto = Roboto({
 const robotoMono = Roboto_Mono({
   weight: ['400', '700'],
   subsets: ['latin'],
-  variable: '--font-roboto-mono', // Define una variable CSS inyectada en el DOM
+  variable: '--font-roboto-mono', 
 });
 
 

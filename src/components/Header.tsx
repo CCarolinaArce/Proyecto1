@@ -1,13 +1,13 @@
 'use client';
-import { AppBar, Toolbar, Box, Typography, Button, Link } from '@mui/material';
+import { AppBar, Toolbar, Box, Button, Link } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import MobileMenu from './MobileMenu';
+import { headerMock } from '@/mocks/header.mock';
 
 
 function Navbar() {
-  const pages = ['Deploys', 'Repositories', 'Design', 'Blog', 'About', 'Resources']; // Lista de tus páginas
 
-  const logoPath = '/rocfeler-logo.png'; // Ruta al logo
+  const logoPath = headerMock.logoSrc; // Ruta al logo
 
   return (
     <AppBar
@@ -30,7 +30,7 @@ function Navbar() {
         <Link
           href="/"
           sx={{
-            display: { xs: 'none', md: 'flex' }, // Visible solo en desktop
+            display: { xs: 'none', md: 'flex' }, 
             alignItems: 'center',
             mr: 2,
           }}
@@ -46,21 +46,21 @@ function Navbar() {
 
         {/* Menú de Hamburguesa (para móviles) */}
         <MobileMenu
-          pages={pages}
-          logoSrc={logoPath}
-          handleLogoClick={() => window.location.href = '/'}
+          pages={headerMock.pages}
+          logoSrc={headerMock.logoSrc}
+          handleLogoClick={headerMock.handleLogoClick}
         />
 
         {/* Links de Navegación para Desktop */}
         <Box
           sx={{
             flexGrow: 1,
-            display: { xs: 'none', md: 'flex' }, // Ocultar en móviles, mostrar en desktop
+            display: { xs: 'none', md: 'flex' }, 
             justifyContent: 'center',
             gap: 4,
           }}
         >
-          {pages.map((page) => (
+          {headerMock.pages.map((page) => (
             <Link
               key={page}
               href={`/${page.toLowerCase()}`}
@@ -95,7 +95,7 @@ function Navbar() {
             '&:hover': {
               bgcolor: '#0056b3',
             },
-            display: { xs: 'none', md: 'flex' }, // Ocultar en móviles, mostrar en desktop
+            display: { xs: 'none', md: 'flex' }, 
           }}
         >
           Contact me

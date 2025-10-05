@@ -18,12 +18,6 @@ const FooterContainer = styled(Box)(({ theme }) => ({
   alignItems: 'center',
 }));
 
-const SocialIcon = styled('img')(({ theme }) => ({
-  width: '32px', 
-  height: '32px',
-  margin: theme.spacing(0, 15), 
-  filter: 'brightness(0) invert(1)', 
-}));
 
 function Footer() {
 
@@ -71,7 +65,7 @@ function Footer() {
             </IconButton>
           </Link>
 
-          {/*Pendiente: no encontré la imagen de Behance en FIGMA */}
+          {/*Pendiente: imagen de Behance */}
           <Link href="https://www.behance.net/davidrocfeler" target="_blank" rel="noopener noreferrer">
             <IconButton aria-label="Behance"></IconButton>
           </Link>
